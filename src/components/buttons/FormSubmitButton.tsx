@@ -1,8 +1,7 @@
 "use client";
 
 import { ComponentProps } from "react";
-// @ts-ignore
-import { useFormStatus } from "react-dom";
+import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
 type FormSubmitButtonProps = {
   children: React.ReactNode;
