@@ -5,7 +5,11 @@ const nextConfig = {
       { hostname: "images.unsplash.com" },
       { hostname: "source.unsplash.com" },
       { hostname: "unsplash.com" },
+      { hostname: "lh3.googleusercontent.com" },
     ],
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 
