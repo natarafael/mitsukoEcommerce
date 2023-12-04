@@ -6,6 +6,8 @@ const nextConfig = {
       { hostname: "source.unsplash.com" },
       { hostname: "unsplash.com" },
       { hostname: "lh3.googleusercontent.com" },
+      { hostname: "storage.googleapis.com" },
+      { hostname: "storage.cloud.google.com" },
     ],
   },
   experimental: {
