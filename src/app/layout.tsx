@@ -19,12 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`flex h-screen flex-col justify-between ${inria.className}`}
-      >
+      <body className={`flex min-h-screen flex-col ${inria.className}`}>
         <SessionProvider session={null}>
           <Navbar />
-          <main className="m-auto min-w-[300px] max-w-7xl p-4">{children}</main>
+          <main className="m-auto min-w-[300px] max-w-7xl flex-grow p-4">
+            {children}
+          </main>
           <Footer />
         </SessionProvider>
       </body>

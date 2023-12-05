@@ -34,7 +34,7 @@ export default function AddToCartButton({
   return (
     <div className="flex items-center gap-2">
       <button
-        className="btn btn-primary"
+        className="btn-primary btn"
         onClick={() => {
           setSuccess(false);
           startTransition(async () => {
@@ -43,7 +43,7 @@ export default function AddToCartButton({
           });
         }}
       >
-        Add to Cart
+        Comprar
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
