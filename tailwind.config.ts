@@ -30,7 +30,6 @@ module.exports = {
 
           body: {
             "background-color": "#FFE1EA",
-            height: "100vh",
           },
         },
       },
