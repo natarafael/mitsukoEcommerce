@@ -88,14 +88,13 @@ export default async function Home({
         </div>
         <div className="divider lg:divider-horizontal"></div>
         <div className="card rounded-box grid h-32 flex-grow place-items-center ">
-          <a
-            href="https://wa.me/5545999165279"
-            target="_blank"
+          <Link
+            href="/order"
             className="flex flex-row items-center gap-4 text-center"
           >
             <Image src={whatsLogo} alt="moto logo" width={40} height={40} />
             <h2 className="text-2xl font-bold">Aceitamos encomendas</h2>
-          </a>
+          </Link>
         </div>
       </div>
 

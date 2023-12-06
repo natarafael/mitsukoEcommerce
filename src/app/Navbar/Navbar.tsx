@@ -53,6 +53,11 @@ export default async function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link href="/order" className="btn-ghost btn flex flex-col">
+                  Encomendas
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="btn-ghost btn flex flex-col">
                   Sobre nós
                 </Link>
@@ -70,6 +75,11 @@ export default async function Navbar() {
             <li>
               <Link href="/care" className="btn-ghost btn flex flex-col">
                 Cuidados com a sua vela
+              </Link>
+            </li>
+            <li>
+              <Link href="/order" className="btn-ghost btn flex flex-col">
+                Encomendas
               </Link>
             </li>
             <li>
