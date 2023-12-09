@@ -2,6 +2,7 @@ import { getCart } from "@/lib/db/cart";
 import formatPrice from "@/lib/formatPrice";
 import CartEntry from "./CartEntry";
 import { setProductQuantity } from "./actions";
+import Link from "next/link";
 
 export const metadata = {
   title: "Seu Carrinho - Mitsuko",
@@ -25,7 +26,12 @@ export default async function CartPage() {
         <p className="mb-3 font-bold">
           Total: {formatPrice(cart?.subtotal || 0)}
         </p>
-        <button className="btn-primary btn sm:w-[200px]">Checkout</button>
+        <Link
+          href={"/products/" + cart?.subtotal}
+          className="btn-primary btn sm:w-[200px]"
+        >
+          Checkout
+        </Link>
       </div>
     </div>
   );
