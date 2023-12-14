@@ -21,19 +21,22 @@ export default async function CartPage() {
           setProductQuantity={setProductQuantity}
         />
       ))}
-      {!cart?.items.length && <p>Seu carrinho está vazio.</p>}
-      <div className="flex flex-col items-end sm:items-center">
-        <p className="mb-3 font-bold">
-          Total: {formatPrice(cart?.subtotal || 0)}
-        </p>
-        <button className="btn-primary btn sm:w-[200px]">Checkout</button>
-        {/* <Link
+      {!cart?.items.length ? (
+        <p>Seu carrinho está vazio.</p>
+      ) : (
+        <div className="flex flex-col items-end sm:items-center">
+          <p className="mb-3 font-bold">
+            Total: {formatPrice(cart?.subtotal || 0)}
+          </p>
+          <button className="btn-primary btn sm:w-[200px]">Checkout</button>
+          {/* <Link
           href={"/products/" + cart?.subtotal}
           className="btn-primary btn sm:w-[200px]"
         >
           Checkout
         </Link> */}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
