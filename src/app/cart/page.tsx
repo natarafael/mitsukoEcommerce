@@ -26,12 +26,13 @@ export default async function CartPage() {
         <p className="mb-3 font-bold">
           Total: {formatPrice(cart?.subtotal || 0)}
         </p>
-        <Link
+        <button className="btn-primary btn sm:w-[200px]">Checkout</button>
+        {/* <Link
           href={"/products/" + cart?.subtotal}
           className="btn-primary btn sm:w-[200px]"
         >
           Checkout
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
